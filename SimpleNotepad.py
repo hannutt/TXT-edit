@@ -74,7 +74,7 @@ rullauspalkki.config (command = tekstikentta.yview)
 
 
 
-ohjnimi.pack()
+ohjnimi.pack() #pakataan ylempänä luodut komponentit, että ne näkyvät ohjelmassa.
 tekstikentta.pack()
 alaosa.pack()
 mainloop()
