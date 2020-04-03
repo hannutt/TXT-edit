@@ -46,13 +46,13 @@ valikko = Menu(ikkuna) #luodaan alasvetovalikko
 
 ikkuna.config(menu=valikko)
 toiminnot = Menu(valikko)
-valikko.add_cascade(label = 'Toiminnot', menu = toiminnot)
+valikko.add_cascade(label = 'Functions', menu = toiminnot)
 
-toiminnot.add_command(label = 'Tallenna', command = tallennaTxt, image = tallennus, compound = RIGHT) #Lisätään alasvetovalikkoon tallennustoiminto,
+toiminnot.add_command(label = 'Save', command = tallennaTxt, image = tallennus, compound = RIGHT) #Lisätään alasvetovalikkoon tallennustoiminto,
 #command komennolla lisätään siihen tallennatxt funktion toiminnallisuuus. image komennolla tuodaan NotepadSave.png kuvatiedosto
 #tekstin yhteyteen, joka asetetaan compound komennolla tekstin oikealle puolelle.
 
-toiminnot.add_command(label = 'Avaa', command = avaaTxt, image = avaatiedosto, compound = RIGHT) #lisätään avaustoiminto valikkoon.
+toiminnot.add_command(label = 'Load', command = avaaTxt, image = avaatiedosto, compound = RIGHT) #lisätään avaustoiminto valikkoon.
 
 toiminnot.add_command(label = 'Info', command = info) #lisätään info-toiminto valikkoon.
 
@@ -74,10 +74,7 @@ rullauspalkki.config (command = tekstikentta.yview)
 
 
 
-ohjnimi.pack() #pakataan ylempänä luodut komponentit, että ne näkyvät ohjelmassa.
+ohjnimi.pack() #pakataan luodut komponentit, jolloin ne näkyvät ohjelmassa.
 tekstikentta.pack()
 alaosa.pack()
 mainloop()
-
-    
-
