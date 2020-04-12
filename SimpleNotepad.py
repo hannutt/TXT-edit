@@ -1,7 +1,7 @@
 from tkinter import *
-from tkinter import filedialog
-from tkinter import messagebox
-from tkinter.font import Font
+from tkinter import filedialog #tuodaan tiedostodialogi kirjasto ohjelmaan.
+from tkinter import messagebox #tuodaan ikkunadialogi kirjasto.
+from tkinter.font import Font #tuodaan fonttikirjasto
 
 def tallennaTxt(): #Luodaan funktio, jolla tallennetaan kirjoitettu teksti.
     
