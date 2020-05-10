@@ -65,7 +65,7 @@ ohjnimi = Label(ikkuna, text = 'Txt-editor', background = 'white smoke', font = 
 #luodaan label-tekstikenttä, jossa lukee tekstieditori ja käytetään aiemmin määriteltyä otsikkofonttia.
 #taustavärinä white smoke väriä ja relief komennolla ympyröidään kentän reunat mustalla viivalla.
 
-tekstikentta = Text(ikkuna, width = 40, height = 8, borderwidth = 2, relief = 'sunken', yscrollcommand = rullauspalkki.set)
+tekstikentta = Text(ikkuna, width = 40, height = 10, borderwidth = 2, relief = 'sunken', yscrollcommand = rullauspalkki.set)
 #luodaan tekstilaatikko, ja lisätään siihen aiemmin luotu rullasuspalkki.
 
 alaosa = Label(ikkuna, background = 'slate gray')
